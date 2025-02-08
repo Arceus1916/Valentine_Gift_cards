@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Special</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { 
+            padding-top: 60px; 
+            background: url('bgf.jpg') no-repeat center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 0 17px; 
+            background-color: #f4b495; 
+            position: fixed;
+            top: 0;
+            width: 100%;
+            min-height: 60px;
+            z-index: 1000;
+        }
+        .header img { height: 75px;  }
+        .header .book-now { 
+            background-color: #fff; 
+            color: #ff4d4d; 
+            padding: 10px 15px; 
+            border-radius: 5px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        .landing { 
+            text-align: center; 
+            margin: 50px 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        .landing img { 
+            max-width: 100%; 
+            height: auto;
+            max-height: 100%;
+            display: block;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 77, 77, 0.8);
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .products-container {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        .products { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center;
+        }
+        .product-box { 
+            flex: 1 1 30%; 
+            background: white; 
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+        .product-box img { width: 100%; border-radius: 10px; }
+        .product-id { 
+            background: #ff4d4d; 
+            color: white; 
+            padding: 5px; 
+            border-radius: 5px; 
+            margin-top: 10px; 
+            display: inline-block; 
+        }
+        .price {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        .original-price {
+            text-decoration: line-through;
+            color: gray;
+            margin-right: 5px;
+        }
+        .discounted-price {
+            font-weight: bold;
+            color: #ff4d4d;
+        }
+        .footer { 
+            background: #ff4d4d; 
+            color: white; 
+            text-align: center; 
+            padding: 20px; 
+            width: 100%;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo2.png" alt="Logo">
+        <a href="https://your-booking-link.com" class="book-now">Book Now</a>
+    </header>
+    
+    <section class="landing">
+        <div class="overlay-text">Express your love - Cherish the moments</div>
+    </section>
+    
+    <div class="products-container">
+        <section class="products">
+            <div class="product-box">
+                <img src="product1.jpg" alt="Product 1">
+                <h5>Product Name 1</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 001</div>
+                <div class="price">
+                    <span class="original-price">₹1000</span>
+                    <span class="discounted-price">₹799</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="product2.jpg" alt="Product 2">
+                <h5>Product Name 2</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 002</div>
+                <div class="price">
+                    <span class="original-price">₹1200</span>
+                    <span class="discounted-price">₹899</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="product3.jpg" alt="Product 3">
+                <h5>Product Name 3</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 003</div>
+                <div class="price">
+                    <span class="original-price">₹1500</span>
+                    <span class="discounted-price">₹1099</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="product4.jpg" alt="Product 4">
+                <h5>Product Name 4</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 4</div>
+                <div class="price">
+                    <span class="original-price">₹1500</span>
+                    <span class="discounted-price">₹1099</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="product5.jpg" alt="Product 5">
+                <h5>Product Name 5</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 005</div>
+                <div class="price">
+                    <span class="original-price">₹1500</span>
+                    <span class="discounted-price">₹1099</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="product6.jpg" alt="Product 6">
+                <h5>Product Name 6</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 6</div>
+                <div class="price">
+                    <span class="original-price">₹1500</span>
+                    <span class="discounted-price">₹1099</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="product7.jpg" alt="Product 7">
+                <h5>Product Name 7</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 007</div>
+                <div class="price">
+                    <span class="original-price">₹1500</span>
+                    <span class="discounted-price">₹1099</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="product8.jpg" alt="Product 8">
+                <h5>Product Name 8</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 008</div>
+                <div class="price">
+                    <span class="original-price">₹1500</span>
+                    <span class="discounted-price">₹1099</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="product9.jpg" alt="Product 9">
+                <h5>Product Name 9</h5>
+                <p>Short description of the product.</p>
+                <div class="product-id">ID: 9</div>
+                <div class="price">
+                    <span class="original-price">₹1500</span>
+                    <span class="discounted-price">₹1099</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>Contact us: email@example.com | +91 1234567890 | +91 9876543210</p>
+    </footer>
+</body>
+</html>
