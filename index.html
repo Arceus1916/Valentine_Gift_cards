@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day Special</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
     <style>
         body { 
             padding-top: 60px; 
@@ -108,6 +109,28 @@
             font-weight: bold;
             color: #ff4d4d;
         }
+        .procedure{
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center;
+            text-align: center; 
+            margin: 50px 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        .procedure-box{
+            flex: 1 1 30%; 
+            background: white; 
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
         .footer { 
             background: #f4b495; 
             color: white; 
@@ -123,12 +146,42 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+        .container {
+            width: 60%;
+            padding: 20px;
+        }
+        .container h1 {
+            text-align: center;
+            background: rgba(75, 83, 32, 0.8);
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .container .procedure-box {
+            text-align: justify;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .procedure-box .step {
+            margin-bottom: 15px;
+        }
+        .step h4 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .step ul {
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
     <header class="header">
         <img src="logo2.png" alt="Logo">
-        <a href="https://your-booking-link.com" class="book-now" target="_blank">Book Now</a>
+        <a href="https://forms.gle/Wi2gcXM1JeTnAvxS9" class="book-now" target="_blank">Book Now</a>
     </header>
     
     <section class="landing">
@@ -137,131 +190,265 @@
     
     <div class="products-container">
         <section class="products">
-            <div class="product-box">
-                <img src="product1.jpg" alt="S01">
-                <h5>Product Name 1</h5>
-                <p>Short description of the product.</p>
+            <!-- <div class="product-box">
+                <img src="S01.jpg" alt="S01">
+                <h5>Memory Lane Romance</h5>
+                <p>Step into the world of nostalgic love with our Memory Lane Romance card. This book-style keepsake unfolds into two evocative sides: on the left, a retro newspaper-inspired picture pocket holds two photos styled as if hung on your favorite wall; on the right, a hidden envelope reveals a heartfelt letter accompanied by delicate floral accents. A timeless memento to celebrate cherished moments.</p>
                 <div class="product-id">ID: S01</div>
                 <div class="price">
                     <span class="original-price">₹1000</span>
                     <span class="discounted-price">₹799</span>
                 </div>
-            </div>
+            </div> -->
             <div class="product-box">
-                <img src="product2.jpg" alt="S02">
-                <h5>Product Name 2</h5>
-                <p>Short description of the product.</p>
-                <div class="product-id">ID: S02</div>
+                <img src="S09.jpg" alt="S01">
+                <h5>Paper Heart Bouquet </h5>
+                <p>Experience artful romance with our Paper Heart Bouquet. Meticulously crafted from shredded paper and mounted on a thermocol base, this bouquet forms a unique heart shape that’s both eco-friendly and creative—a distinctive way to express your heartfelt affection.</p>
+                <div class="product-id">ID: S01</div>
                 <div class="price">
-                    <span class="original-price">₹1200</span>
-                    <span class="discounted-price">₹899</span>
+                    <span class="original-price">₹650</span>
+                    <span class="discounted-price">₹449</span>
                 </div>
             </div>
             <div class="product-box">
-                <img src="product3.jpg" alt="S03">
-                <h5>Product Name 3</h5>
-                <p>Short description of the product.</p>
+                <img src="S02.jpg" alt="S02">
+                <h5>Serenade Scroll</h5>
+                <p>Let your emotions sing with our Serenade Scroll. This elegant envelope-format letter unfolds into multiple layers of love—a warm “I Love You” on the first fold, a personal note on the second, and a special spot for photos on the third. With an integrated QR code linking to a curated Stopify song, your love story is set to a beautiful melody.</p>
+                <div class="product-id">ID: S02</div>
+                <div class="price">
+                    <span class="original-price">₹700</span>
+                    <span class="discounted-price">₹599</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="S03.jpg" alt="S03">
+                <h5>Perfect Match Chronicle</h5>
+                <p>Celebrate your unique bond with the interactive Perfect Match Chronicle. This zigzag-opening book invites you to craft your relationship’s “contract” complete with a space for your signature beneath a favorite photo. Hidden within are two secret envelopes, a playful match stick proclaiming “You are my perfect match,” and pages filled with personal messages and memories—a fun, personalized journey of love.</p>
                 <div class="product-id">ID: S03</div>
                 <div class="price">
                     <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="discounted-price">₹999</span>
                 </div>
             </div>
             <div class="product-box">
-                <img src="product4.jpg" alt="S04">
-                <h5>Product Name 4</h5>
-                <p>Short description of the product.</p>
+                <img src="S15.jpg" alt="S04">
+                <h5>Anniversary Heartstrings</h5>
+                <p>Celebrate another year of love with our Anniversary Heartstrings card. This simple yet elegant page is adorned with delicate heart strings and a warm “Happy Anniversary” message, complete with a personalized space for your lover’s name. It’s a heartfelt keepsake that beautifully captures the melody of your shared journey.</p>
                 <div class="product-id">ID: S04</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹350</span>
+                    <span class="discounted-price">₹199</span>
                 </div>
             </div>
+            <!-- <div class="product-box">
+                <img src="S04.jpg" alt="S04">
+                <h5>A to Z of Love</h5>
+                <p>Capture every facet of your affection with A to Z of Love. On the left, a charming “Photo Booth” section is perfect for showcasing your favorite moments. On the right, an endearing A-Z love message unfolds, celebrating your bond from every angle. It’s the perfect blend of visual delight and heartfelt words</p>
+                <div class="product-id">ID: S04</div>
+                <div class="price">
+                    <span class="original-price">₹700</span>
+                    <span class="discounted-price">₹499</span>
+                </div>
+            </div> -->
             <div class="product-box">
-                <img src="product5.jpg" alt="S05">
-                <h5>Product Name 5</h5>
-                <p>Short description of the product.</p>
+                <img src="S05.jpg" alt="S05">
+                <h5>Origami Heart Blossom </h5>
+                <p>Sometimes, simplicity speaks volumes. Origami Heart Blossom is a minimalist “I Love You” card enhanced by a delicate origami flower at its center. This refined piece is an elegant token of affection—ideal for letting someone know they’re always on your mind.</p>
                 <div class="product-id">ID: S05</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹500</span>
+                    <span class="discounted-price">₹299</span>
                 </div>
             </div>
             <div class="product-box">
-                <img src="product6.jpg" alt="S06">
-                <h5>Product Name 6</h5>
-                <p>Short description of the product.</p>
+                <img src="S06.jpg" alt="S06">
+                <h5>Puzzle of Love </h5>
+                <p>Express the truth that together you’re complete with our Puzzle of Love card. Featuring a heart design with a missing piece, the accompanying envelope reveals the final fragment along with a tender message: “You complete me.” A thoughtful metaphor for the beautiful way your lives fit together.</p>
                 <div class="product-id">ID: S06</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹600</span>
+                    <span class="discounted-price">₹349</span>
                 </div>
             </div>
             <div class="product-box">
-                <img src="product7.jpg" alt="S07">
-                <h5>Product Name 7</h5>
-                <p>Short description of the product.</p>
+                <img src="S07.jpg" alt="S07">
+                <h5>Heartfelt Overlay</h5>
+                <p>Unveil your love in layers with Heartfelt Overlay. The first page boasts a charming heart-shaped cut-out that reveals, on the second page, a rolled paper heart overlay paired with the sweet note “You and Me.” This multi-dimensional card is a stylish keepsake symbolizing the unity of two hearts.</p>
                 <div class="product-id">ID: S07</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹700</span>
+                    <span class="discounted-price">₹399</span>
                 </div>
             </div>
             <div class="product-box">
-                <img src="product8.jpg" alt="S08">
-                <h5>Product Name 8</h5>
-                <p>Short description of the product.</p>
+                <img src="S08.jpg" alt="S08">
+                <h5>Blushing Marigold (set of three)</h5>
+                <p>Bright, delicate, and full of life—Blushing Marigold is a tissue paper flower hand-painted in soft pink hues. This handcrafted bloom captures the essence of romance and is the perfect little token to brighten someone’s day with love and warmth.</p>
                 <div class="product-id">ID: S08</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹375</span>
+                    <span class="discounted-price">₹199</span>
                 </div>
             </div>
             <div class="product-box">
-                <img src="product9.jpg" alt="S09">
-                <h5>Product Name 9</h5>
-                <p>Short description of the product.</p>
+                <img src="S01.jpg" alt="S09">
+                <h5>Memory Lane Romance</h5>
+                <p>Step into the world of nostalgic love with our Memory Lane Romance card. This book-style keepsake unfolds into two evocative sides: on the left, a retro newspaper-inspired picture pocket holds two photos styled as if hung on your favorite wall; on the right, a hidden envelope reveals a heartfelt letter accompanied by delicate floral accents. A timeless memento to celebrate cherished moments.
+                    <br>
+                    <b> &#40; Design may differ a little with respect to the background &#41;</b>
+                </p>
                 <div class="product-id">ID: S09</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹1000</span>
+                    <span class="discounted-price">₹799</span>
                 </div>
             </div>
+            <!-- <div class="product-box">
+                <img src="S09.jpg" alt="S09">
+                <h5>Paper Heart Bouquet </h5>
+                <p>Experience artful romance with our Paper Heart Bouquet. Meticulously crafted from shredded paper and mounted on a thermocol base, this bouquet forms a unique heart shape that’s both eco-friendly and creative—a distinctive way to express your heartfelt affection.</p>
+                <div class="product-id">ID: S09</div>
+                <div class="price">
+                    <span class="original-price">₹375</span>
+                    <span class="discounted-price">₹299</span>
+                </div>
+            </div> -->
             <div class="product-box">
-                <img src="product10.jpg" alt="S10">
-                <h5>Product Name 10</h5>
-                <p>Short description of the product.</p>
+                <img src="S14.jpg" alt="S10">
+                <h5>Ribboned Tulip Medley</h5>
+                <p>Embrace the delicate art of origami with our Ribboned Tulip Medley. Presented on an A4 paper canvas, this piece features meticulously folded tulips accented with elegant ribbons, creating the impression of a vibrant bouquet. Light, charming, and artfully designed, it’s an ideal gift to brighten anyone’s day with a handcrafted touch.</p>
                 <div class="product-id">ID: S10</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹450</span>
+                    <span class="discounted-price">₹299</span>
                 </div>
             </div>
+            <!-- <div class="product-box">
+                <img src="S10.jpg" alt="S10">
+                <h5>Blooming Paper Vase</h5>
+                <p>Add a whimsical touch to any space with Blooming Paper Vase. This mini paper pot holds two beautifully designed paper flowers, creating a playful yet elegant floral arrangement. It’s a delightful décor piece that doubles as a cherished memento of your love.</p>
+                <div class="product-id">ID: S10</div>
+                <div class="price">
+                    <span class="original-price">₹500</span>
+                    <span class="discounted-price">₹349</span>
+                </div>
+            </div> -->
             <div class="product-box">
-                <img src="product11.jpg" alt="S11">
-                <h5>Product Name 11</h5>
-                <p>Short description of the product.</p>
+                <img src="S11.jpg" alt="S11">
+                <h5>Origami Love Bouquet</h5>
+                <p>Send a cascade of affection with our Origami Love Bouquet. This full bouquet, intricately crafted from premium craft paper and folded into an array of elegant origami flowers, is a timeless celebration of love and creativity—an unforgettable gift for your Valentine.</p>
                 <div class="product-id">ID: S11</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹850</span>
+                    <span class="discounted-price">₹699</span>
                 </div>
             </div>
             <div class="product-box">
-                <img src="product12.jpg" alt="S12">
-                <h5>Product Name 12</h5>
-                <p>Short description of the product.</p>
+                <img src="S12.jpg" alt="S12">
+                <h5>Petal Kiss Rose</h5>
+                <p>Delicately crafted from tissue paper, the Petal Kiss Rose embodies the gentle beauty of romance. This exquisite rose captures the soft elegance of love and is the perfect gesture to express your deepest feelings in a single, stunning bloom.</p>
                 <div class="product-id">ID: S12</div>
                 <div class="price">
-                    <span class="original-price">₹1500</span>
-                    <span class="discounted-price">₹1099</span>
+                    <span class="original-price">₹250</span>
+                    <span class="discounted-price">₹89</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="S13.jpg" alt="S13">
+                <h5>Web of Roses</h5>
+                <p>Introducing our Web of Roses bouquet—a stunning blend of classic romance and a playful twist. At its center, deep red roses are arranged in a pattern reminiscent of a famous web-slinger, symbolizing both passion and bold love. This unique bouquet is perfect for those who want to express their admiration with a touch of superhero charm.</p>
+                <div class="product-id">ID: S13</div>
+                <div class="price">
+                    <span class="original-price">₹900</span>
+                    <span class="discounted-price">₹749</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="S10.jpg" alt="S14">
+                <h5>Blooming Paper Vase</h5>
+                <p>Add a whimsical touch to any space with Blooming Paper Vase. This mini paper pot holds two beautifully designed paper flowers, creating a playful yet elegant floral arrangement. It’s a delightful décor piece that doubles as a cherished memento of your love.</p>
+                <div class="product-id">ID: S14</div>
+                <div class="price">
+                    <span class="original-price">₹900</span>
+                    <span class="discounted-price">₹699</span>
+                </div>
+            </div>
+            <!-- <div class="product-box">
+                <img src="S14.jpg" alt="S14">
+                <h5>Ribboned Tulip Medley</h5>
+                <p>Embrace the delicate art of origami with our Ribboned Tulip Medley. Presented on an A4 paper canvas, this piece features meticulously folded tulips accented with elegant ribbons, creating the impression of a vibrant bouquet. Light, charming, and artfully designed, it’s an ideal gift to brighten anyone’s day with a handcrafted touch.</p>
+                <div class="product-id">ID: S14</div>
+                <div class="price">
+                    <span class="original-price">₹450</span>
+                    <span class="discounted-price">₹299</span>
+                </div>
+            </div> -->
+            <!-- <div class="product-box">
+                <img src="S15.jpg" alt="S15">
+                <h5>Anniversary Heartstrings</h5>
+                <p>Celebrate another year of love with our Anniversary Heartstrings card. This simple yet elegant page is adorned with delicate heart strings and a warm “Happy Anniversary” message, complete with a personalized space for your lover’s name. It’s a heartfelt keepsake that beautifully captures the melody of your shared journey.</p>
+                <div class="product-id">ID: S15</div>
+                <div class="price">
+                    <span class="original-price">₹350</span>
+                    <span class="discounted-price">₹199</span>
+                </div>
+            </div> -->
+            <div class="product-box">
+                <img src="S04.jpg" alt="S15">
+                <h5>A to Z of Love</h5>
+                <p>Capture every facet of your affection with A to Z of Love. On the left, a charming “Photo Booth” section is perfect for showcasing your favorite moments. On the right, an endearing A-Z love message unfolds, celebrating your bond from every angle. It’s the perfect blend of visual delight and heartfelt words</p>
+                <div class="product-id">ID: S15</div>
+                <div class="price">
+                    <span class="original-price">₹700</span>
+                    <span class="discounted-price">₹499</span>
                 </div>
             </div>
         </section>
+        <div class="container">
+            <h1>Procedure to Order</h1>
+            <div class="procedure-box">
+                <div class="step">
+                    <h4>Step 1: Browse & Select</h4>
+                    <ul>
+                        <li>Visit our website and explore our unique range of handmade gifts.</li>
+                        <li>Choose the product that best expresses your love and click the "Book Now" button.</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <h4>Step 2: Fill Out the Order Form</h4>
+                    <ul>
+                        <li>A Google Form will open where you'll enter your details.</li>
+                        <li>Select your product and choose any add-on features such as gift wrapping or a Spotify song QR code.</li>
+                        <li>Upload an image of your 50% payment along with any photos you’d like to include and your personal message for the card.</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <h4>Step 3: Share Your Suggestions</h4>
+                    <ul>
+                        <li>Once we receive your payment, we will contact you to gather any additional suggestions or customization details.</li>
+                        <li>This helps us ensure that your gift perfectly captures your vision.</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <h4>Step 4: Review Your Order</h4>
+                    <ul>
+                        <li>After crafting your personalized gift, we will send you a picture of the final design.</li>
+                        <li>Review the image to confirm that it meets your expectations.</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <h4>Step 5: Complete Payment & Delivery</h4>
+                    <ul>
+                        <li>Once you’re happy with the design, pay the remaining balance.</li>
+                        <li>We will then deliver your unique, handmade gift right to your doorstep.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     
     <footer class="footer">
-        <p>Contact us: email@example.com | +91 1234567890 | +91 9876543210</p>
+        <p>Contact us: Email: valentino069@gmail.com</p>
     </footer>
 </body>
 </html>
